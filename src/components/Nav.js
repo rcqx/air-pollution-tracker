@@ -1,9 +1,12 @@
+import { Link } from 'react-router-dom';
 import { FaAngleLeft, FaCog } from 'react-icons/fa';
 
 const Nav = () => (
   <nav>
-    <FaAngleLeft size={50} />
-    <h3>Air quality in America</h3>
+    <Link to="/">
+      <FaAngleLeft size={42} onClick={() => console.log('LMAO')} />
+    </Link>
+    <h4>Air Quality Tracker</h4>
     <FaCog size={28} />
   </nav>
 );

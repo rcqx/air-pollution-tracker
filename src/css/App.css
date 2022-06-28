@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
 body {
   background-color: #4169E1;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.15em;
+  min-width: 360px;
+  color: white;
 }
 
 nav {
@@ -7,13 +13,38 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding-right: 1em;
+  border-bottom: 1px solid black;
+}
+
+nav h4 {
+  margin: 0%;
 }
 
 .homeContainer {
-  border: 2px solid black;
-  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+  height: 30vh;
+}
+
+.homeContainer h3 {
+  text-align: center;
+  width: 3em;
+  z-index: 1;
+  position: relative;
+  left: -50px;
 }
 
 .navContainer {
   border: 2px solid black;
+}
+
+#america {
+  width: 200px;
+}
+
+#stats {
+  margin: 0%;
+  padding: 0.5em 1em;
 }
