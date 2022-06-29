@@ -1,4 +1,4 @@
-const Country = ({ country }) => {
+const Country = ({ country, }) => {
   return (
     <div className="countryCard">
       <img src="" alt="" />
