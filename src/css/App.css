@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body {
-  background-color: #4169E1;
+  background-color: #191970;
   font-family: 'Lato', sans-serif;
   font-size: 1.15em;
   min-width: 360px;
@@ -20,20 +20,32 @@ nav h4 {
   margin: 0%;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .homeContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 30vh;
   padding-top: 1em;
+  width:  100%;
+  height: auto;
 }
 
-.homeContainer h3 {
+.homeContainer img {
+  width: 50%;
+  /* padding-left: 3em; */
+}
+
+.mainTitle h1 {
   text-align: center;
   width: 3em;
   z-index: 1;
   position: relative;
-  left: -30px;
+  left: -45px;
 }
 
 .navContainer {
@@ -50,18 +62,31 @@ nav h4 {
 }
 
 .regionCont {
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5em;
+  gap: .25em;
   justify-content: center;
-  padding: 0.5em 0;
+  align-items: center;
+  /* padding: 0.5em 0; */
 }
 
-.regionCard {
-  width: 46%;
+.regionCont a {
+  width: 48%;
+}
+
+.na, .ca, .sa, .tc {
+  display: flex;
+  width: 100%;
   height:250px;
-  border: 2px solid black;
+  background-color: rgba(0, 0, 255, 0.25);
+  justify-content: center;
+  align-items: center;
+}
+
+.regionImg {
+  width: 100px;
 }
 
 .footerCont {
@@ -77,4 +102,68 @@ nav h4 {
   align-items: space-between;
   justify-content: space-between;
   height: 100vh;
+}
+
+.mainTitle {
+  display: flex;
+  flex-direction:  column;
+  width: 10%;
+  height: auto;
+}
+
+.mainTitle h5 {
+  position: relative;
+  left: -30px;
+}
+
+.mainTitle > * {
+  margin: 0%;
+}
+
+.mainTitle p {
+  position: relative;
+  left: -30px;
+  width: 4em;
+}
+
+.na {
+  background-image: url('../images/na.png');
+  background-size: cover;
+  font-size: 1.45em;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+}
+
+.ca {
+  background-image: url('../images/ca.png');
+  background-size: cover;
+  font-size: 1.3em;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+}
+
+.sa {
+  background-image: url('../images/sa.png');
+  background-size: cover;
+  font-size: 1.25em;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  /* padding: 0.25em; */
+}
+
+.tc {
+  background-image: url('../images/tc.png');
+  background-size: 150%;
+  font-size: 1.35em;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  /* padding: 0.25em; */
+}
+
+.capitalCard {
+  border: 2px solid black;
 }

@@ -1,10 +1,19 @@
 import { configureStore } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
-import { reducerNa, reducerCa, reducerSa, reducerTc, fetchNa, fetchCa, fetchSa, fetchTc } from './countries/fetchData';
+import {
+  reducerNa,
+  reducerCa,
+  reducerSa,
+  reducerTc,
+  fetchNa,
+  fetchCa,
+  fetchSa,
+  fetchTc,
+} from './countries/fetchData';
 
 const store = configureStore({
   reducer: {
-    nortAmerica: reducerNa,
+    northAmerica: reducerNa,
     centralAmerica: reducerCa,
     southAmerica: reducerSa,
     theCaribbean: reducerTc,
