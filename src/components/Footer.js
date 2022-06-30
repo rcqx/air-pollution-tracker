@@ -1,6 +1,6 @@
 const Footer = () => (
   <div className="footerCont">
-    Copyright &copy
+    Copyright &copy; | Jose R. Castaños
   </div>
 );
 

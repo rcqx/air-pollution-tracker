@@ -33,7 +33,7 @@ const Home = () => {
         <Link to="/details_south_america">
           <div role="button" tabIndex={0} className="sa">{`South America ${sa.length} capital cities`}</div>
         </Link>
-        <Link to="/details">
+        <Link to="/details_the_caribbean">
           <div role="button" tabIndex={0} className="tc">{`The Caribbean ${tc.length} capital cities`}</div>
         </Link>
       </div>
