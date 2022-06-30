@@ -2,7 +2,9 @@
 
 # Air Pollution Tracker 🧮
 
-> A web application that provides current, forecast and historical air pollution data for any coordinates on the globe.
+![cover1](./src/images/ap1.png) ![cover1](./src/images/ap2.png) ![cover1](./src/images/ap4.png) ![cover1](./src/images/ap3.png)
+
+> A web application that provides current air pollution data for all of the 56 capitals of the American continent!
 
 - Uses React components, props, life cycle methods
 - React Router.
@@ -11,10 +13,9 @@
 - Uses React Testing Library.
 - Uses Redux store, actions and reducers in React.
 
-![cover_img](./src/img/cover.png)
-
 ## Built With
 
+- Air Pollution API from [OpenWeather](https://openweathermap.org/)
 - Javascript
 - create-react-app
 - React Router

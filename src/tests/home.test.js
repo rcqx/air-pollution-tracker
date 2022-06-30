@@ -19,8 +19,8 @@ const mockStore = () => {
         flags: 'https://flagcdn.com/w320/ca.png',
         latlng: [
           60,
-          -95
-        ]
+          -95,
+        ],
       },
       {
         country: 'United States',
@@ -30,8 +30,8 @@ const mockStore = () => {
         flags: 'https://flagcdn.com/w320/us.png',
         latlng: [
           38,
-          -97
-        ]
+          -97,
+        ],
       },
     ],
   };
@@ -39,9 +39,9 @@ const mockStore = () => {
     preloadedState,
     reducer: {
       northAmerica: reducerNa,
-    }
-  })
-}
+    },
+  });
+};
 
 const mockHome = () => {
   const fetchNa = [
@@ -53,8 +53,8 @@ const mockHome = () => {
       flags: 'https://flagcdn.com/w320/ca.png',
       latlng: [
         60,
-        -95
-      ]
+        -95,
+      ],
     },
     {
       country: 'United States',
@@ -64,15 +64,15 @@ const mockHome = () => {
       flags: 'https://flagcdn.com/w320/us.png',
       latlng: [
         38,
-        -97
-      ]
+        -97,
+      ],
     },
   ];
 
   const na = fetchNa;
 
   return (
-    <div className="wrapper" >
+    <div className="wrapper">
       <div className="homeContainer">
         <img id="america" src={america} alt="american-continent" />
         <div className="mainTitle">
@@ -85,9 +85,9 @@ const mockHome = () => {
         <div role="button" tabIndex={0} className="na">{`North America ${na.length} capital cities`}</div>
       </div>
       <Footer />
-    </div >
+    </div>
   );
-}
+};
 
 describe('Testing the Home component', () => {
   test('Renders mocked home component properly', () => {
@@ -97,11 +97,11 @@ describe('Testing the Home component', () => {
 
   test('When app runs north america region is displayed correctly', () => {
     render(<Provider store={mockStore()}>{mockHome()}</Provider>);
-    expect(screen.getByAltText("american-continent")).toBeTruthy();
+    expect(screen.getByAltText('american-continent')).toBeTruthy();
   });
 
   test('When app runs north america 2 capital cities are loaded correctly', () => {
     render(<Provider store={mockStore()}>{mockHome()}</Provider>);
-    expect(screen.getAllByText("North America 2 capital cities")).toBeTruthy();
+    expect(screen.getAllByText('North America 2 capital cities')).toBeTruthy();
   });
 });

@@ -1,6 +1,6 @@
-import { screen, render } from "@testing-library/react";
-import Footer from "../components/Footer";
+import { screen, render } from '@testing-library/react';
 import renderer from 'react-test-renderer';
+import Footer from '../components/Footer';
 
 describe('Testing the Footer component', () => {
   test('Footer component renders properly', () => {
@@ -14,4 +14,3 @@ describe('Testing the Footer component', () => {
     expect(screen.getByText('Copyright © | Jose R. Castaños')).toBeTruthy();
   });
 });
-

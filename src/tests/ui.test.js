@@ -1,12 +1,13 @@
+/*eslint-disable */
 import {
   screen, render, fireEvent,
 } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
+import { FaAngleLeft, FaCog } from 'react-icons/fa';
 import { reducerNa } from '../redux/countries/fetchData';
 import america from '../images/america.png';
 import Footer from '../components/Footer';
-import { FaAngleLeft, FaCog } from 'react-icons/fa';
 
 const mockStore = () => {
   const preloadedState = {
@@ -19,8 +20,8 @@ const mockStore = () => {
         flags: 'https://flagcdn.com/w320/ca.png',
         latlng: [
           60,
-          -95
-        ]
+          -95,
+        ],
       },
       {
         country: 'United States',
@@ -30,8 +31,8 @@ const mockStore = () => {
         flags: 'https://flagcdn.com/w320/us.png',
         latlng: [
           38,
-          -97
-        ]
+          -97,
+        ],
       },
     ],
   };
@@ -39,9 +40,9 @@ const mockStore = () => {
     preloadedState,
     reducer: {
       northAmerica: reducerNa,
-    }
-  })
-}
+    },
+  });
+};
 
 const mockHome = () => {
   const fetchNa = [
@@ -53,8 +54,8 @@ const mockHome = () => {
       flags: 'https://flagcdn.com/w320/ca.png',
       latlng: [
         60,
-        -95
-      ]
+        -95,
+      ],
     },
     {
       country: 'United States',
@@ -64,15 +65,15 @@ const mockHome = () => {
       flags: 'https://flagcdn.com/w320/us.png',
       latlng: [
         38,
-        -97
-      ]
+        -97,
+      ],
     },
   ];
 
   const na = fetchNa;
 
   return (
-    <div className="wrapper" >
+    <div className="wrapper">
       <div className="homeContainer">
         <img id="america" src={america} alt="american-continent" />
         <div className="mainTitle">
@@ -82,16 +83,28 @@ const mockHome = () => {
       </div>
       <p id="stats">Select capital city by region</p>
       <div id="test" className="regionCont">
-        <div role="button" tabIndex={0} className="na" onClick={() => document.getElementById('test').innerHTML = 'test passed!'}>{`North America ${na.length} capital cities`}</div>
+        <div
+          role="button"
+          tabIndex={0}
+          className="na"
+          onClick={() => document.getElementById('test').innerHTML = 'test passed!'}
+          onKeyDown={() => document.getElementById('test').innerHTML = 'test passed!'}
+        >
+          {`North America ${na.length} capital cities`}
+        </div>
       </div>
       <Footer />
-    </div >
+    </div>
   );
-}
+};
 
 const mockNav = () => (
-  <nav id='navtest' onClick={() => document.getElementById('navtest').innerHTML = 'nav test passed!'}>
-    <FaAngleLeft alt='faAngleLeft' size={42} />
+  <nav
+    id="navtest"
+    onClick={() => document.getElementById('navtest').innerHTML = 'nav test passed!'}
+    onKeyDown={() => document.getElementById('navtest').innerHTML = 'nav test passed!'}
+  >
+    <FaAngleLeft alt="faAngleLeft" size={42} />
     <h4>Air Quality Tracker</h4>
     <FaCog size={28} />
     nav test

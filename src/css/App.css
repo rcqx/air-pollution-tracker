@@ -29,14 +29,14 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
   padding-top: 1em;
-  width:  100%;
+  width: 100%;
   height: auto;
 }
 
 .homeContainer img {
   width: 50%;
+
   /* padding-left: 3em; */
 }
 
@@ -66,9 +66,10 @@ a {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: .25em;
+  gap: 0.25em;
   justify-content: center;
   align-items: center;
+
   /* padding: 0.5em 0; */
 }
 
@@ -76,10 +77,13 @@ a {
   width: 48%;
 }
 
-.na, .ca, .sa, .tc {
+.na,
+.ca,
+.sa,
+.tc {
   display: flex;
   width: 100%;
-  height:250px;
+  height: 250px;
   background-color: rgba(0, 0, 255, 0.25);
   justify-content: center;
   align-items: center;
@@ -99,14 +103,13 @@ a {
 .wrapper {
   display: flex;
   flex-direction: column;
-  align-items: space-between;
   justify-content: space-between;
   height: 100vh;
 }
 
 .mainTitle {
   display: flex;
-  flex-direction:  column;
+  flex-direction: column;
   width: 10%;
   height: auto;
 }
@@ -149,7 +152,7 @@ a {
 .sa {
   background-image: url('../images/sa.png');
   background-size: cover;
-  font-size: 1.25em;
+  font-size: 1.35em;
   font-weight: bold;
   display: flex;
   text-align: center;
