@@ -6,7 +6,6 @@ export const fetchApApi = (lat, lon) => async (dispatch) => {
   const res = await connect.json().then((dataObject) => dataObject);
   const dataArray = res.list.map((item) => {
     const container = {
-      aqi: item.main.aqi,
       co: item.components.co,
       no: item.components.no,
       no2: item.components.no2,

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { nanoid } from 'nanoid';
 import { useSelector } from 'react-redux';
 import CapitalCard from './CapitalCard';
@@ -8,14 +9,16 @@ const DetailsNa = () => {
   const capitalProps = [];
 
   fetchNa.forEach((item) => capitalProps.push(
-    <CapitalCard
-      key={nanoid()}
-      imgSrc={item.flags}
-      country={item.country}
-      capital={item.capital}
-      lat={item.latlng[0]}
-      lon={item.latlng[1]}
-    />,
+    <Link key={nanoid()} to="/details_api_data">
+      <CapitalCard
+        key={nanoid()}
+        imgSrc={item.flags}
+        country={item.country}
+        capital={item.capital}
+        lat={item.latlng[0]}
+        lon={item.latlng[1]}
+      />
+    </Link>,
   ));
   return (
     <>
