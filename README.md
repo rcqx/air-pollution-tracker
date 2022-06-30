@@ -24,7 +24,7 @@
 
 ## See it live
 
-- [CHECK IT LIVE ON NETLIFY]()
+- [CHECK IT LIVE ON NETLIFY](https://deploy-preview-1--air-pollution-jr-cast.netlify.app/home)
 
 ## Getting Started
 
