@@ -165,5 +165,26 @@ a {
 }
 
 .capitalCard {
-  border: 2px solid black;
+  width: 250px;
+  height: auto;
+  padding: 1em;
+  background-color: rgba(0, 0, 255, 0.25);
+}
+
+.capitalCard img {
+  width: 100%;
+}
+
+.capitalCard p {
+  margin: 0%;
+  text-align: center;
+}
+
+.capitalCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  padding: 1em 0;
 }

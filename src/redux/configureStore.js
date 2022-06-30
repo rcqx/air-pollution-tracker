@@ -10,6 +10,7 @@ import {
   fetchSa,
   fetchTc,
 } from './countries/fetchData';
+import { reducerApApi } from './air-pollution/fetchAPI';
 
 const store = configureStore({
   reducer: {
@@ -17,6 +18,7 @@ const store = configureStore({
     centralAmerica: reducerCa,
     southAmerica: reducerSa,
     theCaribbean: reducerTc,
+    apApi: reducerApApi,
   },
   applyMiddleware: [thunk],
 });

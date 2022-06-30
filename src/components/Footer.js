@@ -1,9 +1,7 @@
-const Footer = () => {
-  return (
-    <div className="footerCont">
-      Copyright &copy
-    </div>
-  )
-}
+const Footer = () => (
+  <div className="footerCont">
+    Copyright &copy
+  </div>
+);
 
 export default Footer;

@@ -43,8 +43,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
-
-
-// onClick={() => <Link to="/details" />} onKeyDown={() => <Link to="/details" />}
