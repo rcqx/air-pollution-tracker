@@ -24,7 +24,7 @@
 
 ## See it live
 
-- [CHECK IT LIVE ON NETLIFY](https://deploy-preview-1--air-pollution-jr-cast.netlify.app/home)
+- [CHECK IT LIVE ON NETLIFY](https://air-quality-tracker-jrcast.netlify.app/)
 
 ## Getting Started
 
@@ -60,7 +60,6 @@ To get a local copy up and running follow these simple example steps.
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
-https://space-travelers-alpha-jose.netlify.app/rockets
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments

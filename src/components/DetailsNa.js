@@ -1,12 +1,13 @@
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { nanoid } from 'nanoid';
-import { useSelector } from 'react-redux';
 import CapitalCard from './CapitalCard';
 import Footer from './Footer';
 
 const DetailsNa = () => {
   const fetchNa = useSelector((state) => state.northAmerica);
   const capitalProps = [];
+  const selectProps = [];
 
   fetchNa.forEach((item) => capitalProps.push(
     <Link key={nanoid()} to="/details_api_data">
@@ -20,9 +21,18 @@ const DetailsNa = () => {
       />
     </Link>,
   ));
+
+  fetchNa.forEach((item) => selectProps.push(
+    <option value={item.country}>{item.country}</option>
+  ));
+
   return (
     <>
-      <div className="capitalCont">
+      <select className='filterBox' name="countries" id="pet-select">
+        <option value="">--Choose an option--</option>
+        {selectProps}
+      </select>
+      <div id="capitals" className="capitalCont">
         {capitalProps}
       </div>
       <Footer />
