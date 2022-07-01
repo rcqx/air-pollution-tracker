@@ -1,11 +1,12 @@
 import { useSelector } from 'react-redux';
+import { nanoid } from 'nanoid';
 
 const DetailsApi = () => {
   const res = useSelector((state) => state.apApi);
 
   const resProps = [];
   res.forEach((item) => resProps.push(
-    <div className="apCont">
+    <div key={nanoid()} className="apCont">
       <div className="co">
         <p>Carbon monoxide (co)</p>
         <h1>{item.co}</h1>

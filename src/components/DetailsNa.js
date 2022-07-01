@@ -20,17 +20,8 @@ const DetailsNa = () => {
 
   return (
     <>
-      {/* <select id="mySelect" className="filterBox" name="countries" id="pet-select">
-        <option value="">--Choose an option--</option>
-        {selectProps}
-      </select> */}
-      {/* <div id="capitals" className="capitalCont">
-      {capitalProps}
-    </div>
-    <Footer /> */}
-
       <div className="container-input">
-        <input className="filterBox" type="text" placeholder="Search capital by country" onChange={(e) => setSearch(e.target.value)} />
+        <input className="filterBox" type="text" placeholder="Search by country" onChange={(e) => setSearch(e.target.value)} />
       </div>
       <div id="capitals" className="capitalCont">
         {filteredCountries.map((item) => (
