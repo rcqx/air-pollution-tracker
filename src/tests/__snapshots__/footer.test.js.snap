@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component renders properly 1`] = `
+<div
+  className="footerCont"
+>
+  Copyright © | Jose R. Castaños
+</div>
+`;
+
+exports[`Testing the Footer component Footer component renders properly 1`] = `
+<div
+  className="footerCont"
+>
+  Copyright © | Jose R. Castaños
+</div>
+`;

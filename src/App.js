@@ -1,27 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
+import {
+  Routes,
+  Route,
+  Navigate,
+} from 'react-router-dom';
+import Home from './components/Home';
+import DetailsNa from './components/DetailsNa';
+import DetailsCa from './components/DetailsCa';
+import DetailsSa from './components/DetailSa';
+import DetailsApi from './components/DetailsApi';
+import Nav from './components/Nav';
+import DetailsTc from './components/DetailsTc';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          <code>
-            src/App.js
-          </code>
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Navigate replace to="/home" />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/details_north_america" element={<DetailsNa />} />
+        <Route path="/details_central_america" element={<DetailsCa />} />
+        <Route path="/details_south_america" element={<DetailsSa />} />
+        <Route path="/details_the_caribbean" element={<DetailsTc />} />
+        <Route path="/details_api_data" element={<DetailsApi />} />
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="homeContainer"
+  >
+    <img
+      alt="american-continent"
+      id="america"
+      src="america.png"
+    />
+    <div
+      className="mainTitle"
+    >
+      <h1>
+        Cities
+      </h1>
+      <p>
+        Total: 56
+      </p>
+    </div>
+  </div>
+  <p
+    id="stats"
+  >
+    Select capital city by region
+  </p>
+  <div
+    className="regionCont"
+  >
+    <div
+      className="na"
+      role="button"
+      tabIndex={0}
+    >
+      North America 2 capital cities
+    </div>
+  </div>
+  <div
+    className="footerCont"
+  >
+    Copyright © | Jose R. Castaños
+  </div>
+</div>
+`;
+
+exports[`Testing the Home component Renders mocked home component properly 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="homeContainer"
+  >
+    <img
+      alt="american-continent"
+      id="america"
+      src="america.png"
+    />
+    <div
+      className="mainTitle"
+    >
+      <h1>
+        Cities
+      </h1>
+      <p>
+        Total: 56
+      </p>
+    </div>
+  </div>
+  <p
+    id="stats"
+  >
+    Select capital city by region
+  </p>
+  <div
+    className="regionCont"
+  >
+    <div
+      className="na"
+      role="button"
+      tabIndex={0}
+    >
+      North America 2 capital cities
+    </div>
+  </div>
+  <div
+    className="footerCont"
+  >
+    Copyright © | Jose R. Castaños
+  </div>
+</div>
+`;
